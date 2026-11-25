@@ -1,57 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A simple responsive calculator built with HTML, CSS and JavaScript." />
-  <title>Simple Calculator | Avinash Kumar</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b09">
+  <meta name="description" content="Avinash Kumar — BCA Student. Explore my skills, education and projects.">
+  <title>Avinash Kumar | BCA Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="page">
-    <section class="calculator" aria-label="Calculator">
-      <header class="calculator-header">
-        <div>
-          <p class="eyebrow">BCA • Semester 3 Project</p>
-          <h1>Calculator</h1>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">AK<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a><a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a><a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a><a href="#contact" class="nav-link nav-contact">Contact <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO LEARNING & OPPORTUNITIES</div>
+        <p class="hero-kicker">HELLO, I'M</p>
+        <h1>Avinash<br><span>Kumar.</span></h1>
+        <h2 class="role">BCA Student</h2>
+        <p class="hero-text">I’m learning to build useful things with code, one project at a time. Welcome to my personal portfolio.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
         </div>
-        <span class="status-dot" title="Ready"></span>
-      </header>
-
-      <div class="display" aria-live="polite" aria-atomic="true">
-        <div id="previous-operand" class="previous-operand"></div>
-        <div id="current-operand" class="current-operand">0</div>
+        <div class="hero-social">
+          <a href="https://github.com/avinash02005" target="_blank" rel="noreferrer">GITHUB ↗</a>
+          <span></span>
+          <a href="https://www.linkedin.com/in/avinashkumardev" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
+        </div>
       </div>
-
-      <div class="keypad" aria-label="Calculator buttons">
-        <button class="key utility" data-action="clear">AC</button>
-        <button class="key utility" data-action="delete" aria-label="Delete last digit">DEL</button>
-        <button class="key utility" data-action="percent">%</button>
-        <button class="key operator" data-operator="÷">÷</button>
-
-        <button class="key" data-number="7">7</button>
-        <button class="key" data-number="8">8</button>
-        <button class="key" data-number="9">9</button>
-        <button class="key operator" data-operator="×">×</button>
-
-        <button class="key" data-number="4">4</button>
-        <button class="key" data-number="5">5</button>
-        <button class="key" data-number="6">6</button>
-        <button class="key operator" data-operator="−">−</button>
-
-        <button class="key" data-number="1">1</button>
-        <button class="key" data-number="2">2</button>
-        <button class="key" data-number="3">3</button>
-        <button class="key operator" data-operator="+">+</button>
-
-        <button class="key zero" data-number="0">0</button>
-        <button class="key" data-action="decimal">.</button>
-        <button class="key equals" data-action="equals">=</button>
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="monogram-card">
+          <div class="card-top"><span>PERSONAL PORTFOLIO</span><span>2026</span></div>
+          <div class="monogram">A<span>K</span></div>
+          <div class="card-bottom"><span>LEARN.</span><span>BUILD.</span><span>GROW.</span></div>
+        </div>
+        <div class="floating-tag tag-top"> <span class="tag-icon">⌘</span> Curious mind</div>
+        <div class="floating-tag tag-bottom"><span class="status-dot"></span> Always learning</div>
       </div>
-      <p id="message" class="message" role="status"></p>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
     </section>
-    <footer>Made by Avinash Kumar · HTML, CSS &amp; JavaScript</footer>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal"><p class="section-label">01 / ABOUT ME</p><h2>A little about <span>myself.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-intro reveal"><p class="large-copy">A student with an interest in technology and a passion for <span>learning by doing.</span></p></div>
+        <div class="about-detail reveal">
+          <p>I’m Avinash Kumar, a BCA student at the Indian Institute of Business and Management, Patna. I’m building my foundation in programming and web development through regular practice and small projects.</p>
+          <p>I enjoy exploring how websites and applications work, improving my coding skills, and turning what I learn into practical work. I’m at the beginning of my development journey and focused on growing step by step.</p>
+          <div class="about-facts">
+            <div><span class="fact-number">03</span><span class="fact-caption">BCA Semester</span></div>
+            <div><span class="fact-number">04</span><span class="fact-caption">Core Skills</span></div>
+            <div><span class="fact-number">01</span><span class="fact-caption">Featured Project</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-heading reveal"><p class="section-label">02 / WHAT I USE</p><h2>My current <span>skills.</span></h2><p class="section-subtitle">Technologies I’m learning and practicing.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><div class="skill-icon">Py</div><h3>Python</h3><p>Programming fundamentals</p><span class="skill-line"><i style="width:54%"></i></span></article>
+          <article class="skill-card reveal"><div class="skill-icon">&lt;/&gt;</div><h3>HTML</h3><p>Web page structure</p><span class="skill-line"><i style="width:62%"></i></span></article>
+          <article class="skill-card reveal"><div class="skill-icon">#</div><h3>CSS</h3><p>Styling and responsive layouts</p><span class="skill-line"><i style="width:56%"></i></span></article>
+          <article class="skill-card reveal"><div class="skill-icon">JS</div><h3>JavaScript</h3><p>Web interactivity fundamentals</p><span class="skill-line"><i style="width:42%"></i></span></article>
+        </div>
+        <p class="skills-note">Skill levels reflect my current learning stage and will grow with practice.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading reveal"><p class="section-label">03 / SELECTED WORK</p><h2>Things I’ve <span>built.</span></h2><p class="section-subtitle">A project from my hands-on learning journey.</p></div>
+      <article class="project-card reveal">
+        <div class="project-preview">
+          <div class="calc-window">
+            <div class="calc-head"><span></span><span></span><span></span><b>CALCULATOR</b></div>
+            <div class="calc-display">12 × 08 <strong>96</strong></div>
+            <div class="calc-keys"><i>AC</i><i>±</i><i>%</i><i class="accent-key">÷</i><i>7</i><i>8</i><i>9</i><i class="accent-key">×</i><i>4</i><i>5</i><i>6</i><i class="accent-key">−</i><i>1</i><i>2</i><i>3</i><i class="accent-key">+</i><i class="wide-key">0</i><i>.</i><i class="accent-key">=</i></div>
+          </div>
+        </div>
+        <div class="project-info"><p class="project-type">01 — FRONTEND PROJECT</p><h3>My First Calculator</h3><p>A beginner-friendly calculator project created to practice web development fundamentals and build confidence with coding.</p><div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://avinash02005.github.io/my-first-calculator-/" target="_blank" rel="noreferrer">Live preview ↗</a><a href="https://github.com/avinash02005/my-first-calculator-" target="_blank" rel="noreferrer">Source code ↗</a></div></div>
+      </article>
+    </section>
+
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-heading reveal"><p class="section-label">04 / EDUCATION</p><h2>My learning <span>path.</span></h2></div>
+        <div class="education-list">
+          <article class="education-item reveal"><div class="edu-date">CURRENT</div><div class="edu-marker"></div><div class="edu-content"><p class="edu-type">UNDERGRADUATE</p><h3>Bachelor of Computer Applications (BCA)</h3><p>Indian Institute of Business and Management (IIBM), Patna</p><span class="edu-status">3rd Semester</span></div></article>
+          <article class="education-item reveal"><div class="edu-date">SCHOOL</div><div class="edu-marker"></div><div class="edu-content"><p class="edu-type">SENIOR SECONDARY</p><h3>Class 12th</h3><p>Completed senior secondary education</p><span class="edu-status">68%</span></div></article>
+          <article class="education-item reveal"><div class="edu-date">SCHOOL</div><div class="edu-marker"></div><div class="edu-content"><p class="edu-type">SECONDARY</p><h3>Class 10th</h3><p>Completed secondary education</p><span class="edu-status">66%</span></div></article>
+        </div>
+        <div class="academic-highlight reveal"><span>✳</span><div><strong>Academic highlight</strong><p>First Semester Result: 7.81 SGPA.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="contact">
+      <div class="section-heading reveal"><p class="section-label">05 / CONTACT</p><h2>Let’s connect <span>and grow.</span></h2><p class="section-subtitle">Have an opportunity, idea, or just want to say hello? Feel free to reach out.</p></div>
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="mailto:Avinash.work78@gmail.com"><span class="contact-icon">✉</span><span class="contact-label">EMAIL</span><strong>Avinash.work78@gmail.com</strong><span class="contact-arrow">↗</span></a>
+        <a class="contact-card reveal" href="tel:+918529206683"><span class="contact-icon">⌕</span><span class="contact-label">PHONE</span><strong>+91 8529206683</strong><span class="contact-arrow">↗</span></a>
+        <a class="contact-card reveal" href="https://www.linkedin.com/in/avinashkumardev" target="_blank" rel="noreferrer"><span class="contact-icon">in</span><span class="contact-label">LINKEDIN</span><strong>Connect with me</strong><span class="contact-arrow">↗</span></a>
+        <a class="contact-card reveal" href="https://github.com/avinash02005" target="_blank" rel="noreferrer"><span class="contact-icon">⌘</span><span class="contact-label">GITHUB</span><strong>Explore my repositories</strong><span class="contact-arrow">↗</span></a>
+      </div>
+      <div class="location-line reveal"><span class="status-dot"></span> Based in Patna, India</div>
+    </section>
   </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home">AK<span>.</span></a><p>Designed & built with care by Avinash Kumar.</p><a href="#home" class="back-top">BACK TO TOP ↑</a></div><div class="container copyright">© <span id="year"></span> Avinash Kumar. All rights reserved.</div></footer>
   <script src="script.js"></script>
 </body>
 </html>
